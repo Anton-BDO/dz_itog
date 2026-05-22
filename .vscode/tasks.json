@@ -1,0 +1,31 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: cl.exe build dz_itog",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/std:c++17",
+                "/utf-8",
+                "/Fe${fileDirname}\\dz_itog.exe",
+                "${fileDirname}\\main.cpp",
+                "${fileDirname}\\Ploshchadka.cpp"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Сборка обоих .cpp файлов проекта"
+        }
+    ],
+    "version": "2.0.0"
+}
